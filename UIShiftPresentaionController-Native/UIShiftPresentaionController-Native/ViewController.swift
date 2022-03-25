@@ -113,6 +113,9 @@ extension ViewController {
         
         if let sheet = navController.sheetPresentationController {
             sheet.detents = [.medium(), .large()]
+            sheet.prefersScrollingExpandsWhenScrolledToEdge = false
+            sheet.preferredCornerRadius = 30
+            sheet.prefersGrabberVisible = true
         }
         
         let medium = UIBarButtonItem(
