@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  UIShiftPresentaionController-Native
+//  UISheetPresentationController-Native
 //
 //  Created by Олег Федоров on 25.03.2022.
 //

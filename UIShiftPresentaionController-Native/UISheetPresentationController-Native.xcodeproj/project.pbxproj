@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1045CBEA27EDE87E0092D89A /* UIShiftPresentaionController-Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIShiftPresentaionController-Native.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1045CBEA27EDE87E0092D89A /* UISheetPresentationController-Native.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UISheetPresentationController-Native.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1045CBED27EDE87E0092D89A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1045CBF127EDE87E0092D89A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1045CBF627EDE87E0092D89A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		1045CBE127EDE87E0092D89A = {
 			isa = PBXGroup;
 			children = (
-				1045CBEC27EDE87E0092D89A /* UIShiftPresentaionController-Native */,
+				1045CBEC27EDE87E0092D89A /* UISheetPresentationController-Native */,
 				1045CBEB27EDE87E0092D89A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		1045CBEB27EDE87E0092D89A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1045CBEA27EDE87E0092D89A /* UIShiftPresentaionController-Native.app */,
+				1045CBEA27EDE87E0092D89A /* UISheetPresentationController-Native.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1045CBEC27EDE87E0092D89A /* UIShiftPresentaionController-Native */ = {
+		1045CBEC27EDE87E0092D89A /* UISheetPresentationController-Native */ = {
 			isa = PBXGroup;
 			children = (
 				1045CBED27EDE87E0092D89A /* AppDelegate.swift */,
@@ -59,7 +59,7 @@
 				1045CC0227EDE94C0092D89A /* DetailViewController.swift */,
 				1045CC0127EDE8A80092D89A /* Files */,
 			);
-			path = "UIShiftPresentaionController-Native";
+			path = "UISheetPresentationController-Native";
 			sourceTree = "<group>";
 		};
 		1045CC0127EDE8A80092D89A /* Files */ = {
@@ -75,9 +75,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1045CBE927EDE87E0092D89A /* UIShiftPresentaionController-Native */ = {
+		1045CBE927EDE87E0092D89A /* UISheetPresentationController-Native */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1045CBFE27EDE87E0092D89A /* Build configuration list for PBXNativeTarget "UIShiftPresentaionController-Native" */;
+			buildConfigurationList = 1045CBFE27EDE87E0092D89A /* Build configuration list for PBXNativeTarget "UISheetPresentationController-Native" */;
 			buildPhases = (
 				1045CBE627EDE87E0092D89A /* Sources */,
 				1045CBE727EDE87E0092D89A /* Frameworks */,
@@ -87,9 +87,9 @@
 			);
 			dependencies = (
 			);
-			name = "UIShiftPresentaionController-Native";
+			name = "UISheetPresentationController-Native";
 			productName = "UIShiftPresentaionController-Native";
-			productReference = 1045CBEA27EDE87E0092D89A /* UIShiftPresentaionController-Native.app */;
+			productReference = 1045CBEA27EDE87E0092D89A /* UISheetPresentationController-Native.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -107,7 +107,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1045CBE527EDE87E0092D89A /* Build configuration list for PBXProject "UIShiftPresentaionController-Native" */;
+			buildConfigurationList = 1045CBE527EDE87E0092D89A /* Build configuration list for PBXProject "UISheetPresentationController-Native" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1045CBE927EDE87E0092D89A /* UIShiftPresentaionController-Native */,
+				1045CBE927EDE87E0092D89A /* UISheetPresentationController-Native */,
 			);
 		};
 /* End PBXProject section */
@@ -286,7 +286,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "UIShiftPresentaionController-Native/Files/Info.plist";
+				INFOPLIST_FILE = "UISheetPresentationController-Native/Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -296,7 +296,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.myapps.UIShiftPresentaionController-Native";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myapps.UISheetPresentationController-Native";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -312,7 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "UIShiftPresentaionController-Native/Files/Info.plist";
+				INFOPLIST_FILE = "UISheetPresentationController-Native/Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -322,7 +322,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.myapps.UIShiftPresentaionController-Native";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myapps.UISheetPresentationController-Native";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -333,7 +333,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1045CBE527EDE87E0092D89A /* Build configuration list for PBXProject "UIShiftPresentaionController-Native" */ = {
+		1045CBE527EDE87E0092D89A /* Build configuration list for PBXProject "UISheetPresentationController-Native" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1045CBFC27EDE87E0092D89A /* Debug */,
@@ -342,7 +342,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1045CBFE27EDE87E0092D89A /* Build configuration list for PBXNativeTarget "UIShiftPresentaionController-Native" */ = {
+		1045CBFE27EDE87E0092D89A /* Build configuration list for PBXNativeTarget "UISheetPresentationController-Native" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1045CBFF27EDE87E0092D89A /* Debug */,
