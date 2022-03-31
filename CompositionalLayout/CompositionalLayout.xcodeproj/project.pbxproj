@@ -10,6 +10,8 @@
 		101AC94727F5CB9200A88CDE /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101AC94627F5CB9200A88CDE /* GridViewController.swift */; };
 		101AC94927F5D48600A88CDE /* TextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101AC94827F5D48600A88CDE /* TextCell.swift */; };
 		101AC94B27F5D4E400A88CDE /* TwoColumnGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101AC94A27F5D4E400A88CDE /* TwoColumnGridViewController.swift */; };
+		101AC94D27F5DA9900A88CDE /* BadgeSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101AC94C27F5DA9900A88CDE /* BadgeSupplementaryView.swift */; };
+		101AC94F27F5DD3400A88CDE /* GridWithBadgesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101AC94E27F5DD3400A88CDE /* GridWithBadgesViewController.swift */; };
 		1097261127F4D40A001CFE45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097261027F4D40A001CFE45 /* AppDelegate.swift */; };
 		1097261527F4D40A001CFE45 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097261427F4D40A001CFE45 /* ListViewController.swift */; };
 		1097261A27F4D40A001CFE45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1097261927F4D40A001CFE45 /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 		101AC94627F5CB9200A88CDE /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
 		101AC94827F5D48600A88CDE /* TextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCell.swift; sourceTree = "<group>"; };
 		101AC94A27F5D4E400A88CDE /* TwoColumnGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnGridViewController.swift; sourceTree = "<group>"; };
+		101AC94C27F5DA9900A88CDE /* BadgeSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSupplementaryView.swift; sourceTree = "<group>"; };
+		101AC94E27F5DD3400A88CDE /* GridWithBadgesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridWithBadgesViewController.swift; sourceTree = "<group>"; };
 		1097260D27F4D40A001CFE45 /* CompositionalLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompositionalLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1097261027F4D40A001CFE45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1097261427F4D40A001CFE45 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +66,9 @@
 				1097261427F4D40A001CFE45 /* ListViewController.swift */,
 				101AC94627F5CB9200A88CDE /* GridViewController.swift */,
 				101AC94A27F5D4E400A88CDE /* TwoColumnGridViewController.swift */,
+				101AC94E27F5DD3400A88CDE /* GridWithBadgesViewController.swift */,
 				101AC94827F5D48600A88CDE /* TextCell.swift */,
+				101AC94C27F5DA9900A88CDE /* BadgeSupplementaryView.swift */,
 				1097262427F4D429001CFE45 /* Files */,
 			);
 			path = CompositionalLayout;
@@ -152,7 +158,9 @@
 				1097261127F4D40A001CFE45 /* AppDelegate.swift in Sources */,
 				101AC94927F5D48600A88CDE /* TextCell.swift in Sources */,
 				101AC94727F5CB9200A88CDE /* GridViewController.swift in Sources */,
+				101AC94D27F5DA9900A88CDE /* BadgeSupplementaryView.swift in Sources */,
 				101AC94B27F5D4E400A88CDE /* TwoColumnGridViewController.swift in Sources */,
+				101AC94F27F5DD3400A88CDE /* GridWithBadgesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

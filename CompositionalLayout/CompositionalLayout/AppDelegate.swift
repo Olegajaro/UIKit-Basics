@@ -28,8 +28,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            rootViewController: GridViewController()
 //        )
         
+//        let navController = UINavigationController(
+//            rootViewController: TwoColumnGridViewController()
+//        )
+        
         let navController = UINavigationController(
-            rootViewController: TwoColumnGridViewController()
+            rootViewController: GridWithBadgesViewController()
         )
         
         window?.rootViewController = navController
