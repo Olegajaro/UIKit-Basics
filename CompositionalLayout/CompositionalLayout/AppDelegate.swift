@@ -20,8 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
         
+//        let navController = UINavigationController(
+//            rootViewController: ListViewController()
+//        )
+        
+//        let navController = UINavigationController(
+//            rootViewController: GridViewController()
+//        )
+        
         let navController = UINavigationController(
-            rootViewController: ListViewController()
+            rootViewController: TwoColumnGridViewController()
         )
         
         window?.rootViewController = navController

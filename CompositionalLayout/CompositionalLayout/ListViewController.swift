@@ -158,7 +158,8 @@ class ListViewController: UIViewController {
                 
                 guard
                     let cell = collectionView.dequeueReusableCell(
-                        withReuseIdentifier: ListCell.reuseId, for: indexPath
+                        withReuseIdentifier: ListCell.reuseId,
+                        for: indexPath
                     ) as? ListCell
                 else { fatalError("Cannot create new cell")}
                 
