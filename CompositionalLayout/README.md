@@ -1,8 +1,10 @@
 # Compositional Layout
 
+UICollectionView Compositional layout. Using a Diffable Data Source to retrieve data.
+
 ____
 
-Uncomment the desired line of code to run the desired example.
+Uncomment the desired line of code in `AppDelegate` to run the desired example. 
 
 ```swift
     func application(
@@ -40,22 +42,22 @@ ____
 
 ## List View
 
-![list]()
+![list](/CompositionalLayout/Images/List.png)
 
 ____
 
 ## Grid View
 
-![grid]()
+![grid](/CompositionalLayout/Images/Grid.png)
 
 ____
 
 ## Two-Column Grid View
 
-![two-column]()
+![two-column](/CompositionalLayout/Images/Two-Column.png)
 
 ____
 
 ## Grid with Badges
 
-![gridBadges]()
+![gridBadges](/CompositionalLayout/Images/GridBadges.png)
