@@ -67,7 +67,7 @@ extension ViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        10
+        4
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -104,7 +104,7 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
         
-        UIEdgeInsets(top: 8, left: 0, bottom: 8, right: 0)
+        UIEdgeInsets(top: 80, left: 0, bottom: 80, right: 0)
     }
     
     // Support new header and footer in collection
