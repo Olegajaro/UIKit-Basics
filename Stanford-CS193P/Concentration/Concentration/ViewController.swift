@@ -11,9 +11,11 @@ class ViewController: UIViewController {
 
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
     
+    @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var flipCountLabel: UILabel!
+    @IBOutlet private weak var scoreLabel: UILabel!
     
-    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet private weak var newGameButton: UIButton!
     
     @IBOutlet private var cardButtons: [UIButton]!
     
@@ -25,6 +27,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         indexTheme = keys.count.acr4random
+        updateViewFromModel()
         update(label: scoreLabel, withText: "Score: \(game.score)")
         update(label: flipCountLabel, withText: "Flips \(game.flipCount)")
     }
@@ -67,7 +70,7 @@ class ViewController: UIViewController {
                 )
                 button.backgroundColor = card.isMatched
                 ? .clear
-                : .systemOrange
+                : cardBackgroundColor
             }
         }
         
@@ -78,7 +81,7 @@ class ViewController: UIViewController {
     private func update(label: UILabel, withText text: String) {
         let attr: [NSAttributedString.Key: Any] = [
             .strokeWidth: 5.0,
-            .strokeColor: UIColor.systemYellow
+            .strokeColor: UIColor.white
         ]
         let attrText = NSAttributedString(
             string: text,
@@ -88,27 +91,35 @@ class ViewController: UIViewController {
     }
     
 //    private var emoji = ["👻", "🎃", "😈", "🐉", "🐢", "😱", "🐰", "🍭", "🍎"]
+    typealias Theme = (emoji: String,
+                       backgroundColor: UIColor,
+                       cardBackgroundColor: UIColor)
+    
     private var emoji = "👻🎃😈🐉🐢😱🐰🍭🍎♠️♣️♥️📝🐶🗑"
+    private var backgroundColor: UIColor = .black
+    private var cardBackgroundColor: UIColor = .systemOrange
     
     private var indexTheme = 0 {
         didSet {
             print(indexTheme, keys[indexTheme])
-            emoji = emojiThemes[keys[indexTheme]] ?? ""
+            titleLabel.text = keys[indexTheme]
             dictEmoji = [Card: String]()
+            (emoji, backgroundColor, cardBackgroundColor) =
+            emojiThemes[keys[indexTheme]] ?? ("", .black, .systemOrange)
+            
+            updateAppearance()
         }
     }
     
-    private var keys: [String] {
-        return Array(emojiThemes.keys)
-    }
+    private var keys: [String] { return Array(emojiThemes.keys) }
     
-    private var emojiThemes: [String: String] = [
-        "Halloween": "👻😈😱🎃👽🧙⚰️🕸🦇🕷🧟‍♂️💀",
-        "Sport": "⚽️🏈🏒🏑🏀⛷🏋️‍♀️🏃‍♂️⛸🏊‍♀️🎾🏸",
-        "Animals": "🐈🐩🐁🐇🐢🐴🦊🐸🦋🐻🐺🦓",
-        "Faces": "😇😘🤓🤯🤑🤧😬🤗🤩🤪😎🤬",
-        "Fruits": "🍌🍏🍍🍉🥭🍊🍓🍒🍇🫐🥝🍈",
-        "Cars": "🚘🚒🚛🚜🚑🚙🚚🚌🚐🏍🚎🚓"
+    private var emojiThemes: [String: Theme] = [
+        "Halloween": ("👻😈😱🎃👽🧙⚰️🕸🦇🕷🧟‍♂️💀", .black, .systemOrange),
+        "Sport": ("⚽️🏈🏒🏑🏀⛷🏋️‍♀️🏃‍♂️⛸🏊‍♀️🎾🏸", .blue, .yellow),
+        "Animals": ("🐈🐩🐁🐇🐢🐴🦊🐸🦋🐻🐺🦓", .gray, .green),
+        "Faces": ("😇😘🤓🤯🤑🤧😬🤗🤩🤪😎🤬", .purple, .red),
+        "Fruits": ("🍌🍏🍍🍉🥭🍊🍓🍒🍇🫐🥝🍈", .red, .yellow),
+        "Cars": ("🚘🚒🚛🚜🚑🚙🚚🚌🚐🏍🚎🚓", .systemTeal, .brown)
     ]
     private var dictEmoji = [Card: String]()
 
@@ -122,5 +133,14 @@ class ViewController: UIViewController {
         }
         
         return dictEmoji[card] ?? "?"
+    }
+    
+    private func updateAppearance() {
+        view.backgroundColor = backgroundColor
+        flipCountLabel.textColor = cardBackgroundColor
+        scoreLabel.textColor = cardBackgroundColor
+        titleLabel.textColor = cardBackgroundColor
+        newGameButton.setTitleColor(backgroundColor, for: .normal)
+        newGameButton.backgroundColor = cardBackgroundColor
     }
 }
