@@ -11,11 +11,9 @@ class ViewController: UIViewController {
 
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
     
-    @IBOutlet private weak var flipCountLabel: UILabel! {
-        didSet {
-            updateFlipCountLabel()
-        }
-    }
+    @IBOutlet private weak var flipCountLabel: UILabel!
+    
+    @IBOutlet weak var scoreLabel: UILabel!
     
     @IBOutlet private var cardButtons: [UIButton]!
     
@@ -23,21 +21,15 @@ class ViewController: UIViewController {
         return (cardButtons.count + 1) / 2
     }
     
-    private(set) var flipCount = 0 {
-        didSet {
-            updateFlipCountLabel()
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         indexTheme = keys.count.acr4random
+        update(label: scoreLabel, withText: "Score: \(game.score)")
+        update(label: flipCountLabel, withText: "Flips \(game.flipCount)")
     }
 
     @IBAction private func touchCard(_ sender: UIButton) {
-        flipCount += 1
-//        game.flipCount += 1
         if let buttonIndex = cardButtons.firstIndex(of: sender) {
             game.chooseCard(at: buttonIndex)
             updateViewFromModel() 
@@ -50,7 +42,6 @@ class ViewController: UIViewController {
         game.resetGame()
         indexTheme = keys.count.acr4random
         updateViewFromModel()
-        flipCount = 0
     }
     
     private func updateViewFromModel() {
@@ -79,18 +70,21 @@ class ViewController: UIViewController {
                 : .systemOrange
             }
         }
+        
+        update(label: scoreLabel, withText: "Score: \(game.score)")
+        update(label: flipCountLabel, withText: "Flips \(game.flipCount)")
     }
     
-    private func updateFlipCountLabel() {
+    private func update(label: UILabel, withText text: String) {
         let attr: [NSAttributedString.Key: Any] = [
             .strokeWidth: 5.0,
             .strokeColor: UIColor.systemYellow
         ]
         let attrText = NSAttributedString(
-            string: "Flips \(flipCount)",
+            string: text,
             attributes: attr
         )
-        flipCountLabel.attributedText = attrText
+        label.attributedText = attrText
     }
     
 //    private var emoji = ["👻", "🎃", "😈", "🐉", "🐢", "😱", "🐰", "🍭", "🍎"]

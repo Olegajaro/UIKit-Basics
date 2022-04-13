@@ -8,9 +8,17 @@
 import Foundation
 
 struct Concentration {
+    
+    private struct Points {
+        static let mathBonus = 2
+        static let missMatchPenalty = 1
+    }
+    
     private(set) var cards = [Card]()
     
-    var flipCount: Int = 0
+    private(set) var flipCount = 0
+    private(set) var score = 0
+    private var seenCards: Set<Int> = []
     
     private var indexOfOneAndOnlyFaceUpCard: Int? {
         get {
@@ -43,11 +51,27 @@ struct Concentration {
             "Concentration.chooseCard(at: \(index)): chosen index not in the cards"
         )
         if !cards[index].isMatched {
+            flipCount += 1
+            
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
                 // check if cards match
                 if cards[matchIndex] == cards[index] {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
+                    
+                    // Increase the score
+                    score += Points.mathBonus
+                } else {
+                    // cards didn't match - Penalize
+                    if seenCards.contains(index) {
+                        score -= Points.missMatchPenalty
+                    }
+                    
+                    if seenCards.contains(matchIndex) {
+                        score -= Points.missMatchPenalty
+                    }
+                    seenCards.insert(index)
+                    seenCards.insert(matchIndex)
                 }
                 cards[index].isFaceUp = true
             } else {
@@ -63,6 +87,9 @@ struct Concentration {
             cards[index].isMatched = false
         }
         cards.shuffle()
+        score = 0
+        seenCards = []
+        flipCount = 0
     }
     
     init(numberOfPairsOfCards: Int) {
