@@ -31,6 +31,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        indexTheme = keys.count.acr4random
     }
 
     @IBAction private func touchCard(_ sender: UIButton) {
@@ -45,9 +47,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func startNewGame() {
-        print("DEBUG: start New Game")
-        
         game.resetGame()
+        indexTheme = keys.count.acr4random
         updateViewFromModel()
         flipCount = 0
     }
@@ -94,6 +95,27 @@ class ViewController: UIViewController {
     
 //    private var emoji = ["👻", "🎃", "😈", "🐉", "🐢", "😱", "🐰", "🍭", "🍎"]
     private var emoji = "👻🎃😈🐉🐢😱🐰🍭🍎♠️♣️♥️📝🐶🗑"
+    
+    private var indexTheme = 0 {
+        didSet {
+            print(indexTheme, keys[indexTheme])
+            emoji = emojiThemes[keys[indexTheme]] ?? ""
+            dictEmoji = [Card: String]()
+        }
+    }
+    
+    private var keys: [String] {
+        return Array(emojiThemes.keys)
+    }
+    
+    private var emojiThemes: [String: String] = [
+        "Halloween": "👻😈😱🎃👽🧙⚰️🕸🦇🕷🧟‍♂️💀",
+        "Sport": "⚽️🏈🏒🏑🏀⛷🏋️‍♀️🏃‍♂️⛸🏊‍♀️🎾🏸",
+        "Animals": "🐈🐩🐁🐇🐢🐴🦊🐸🦋🐻🐺🦓",
+        "Faces": "😇😘🤓🤯🤑🤧😬🤗🤩🤪😎🤬",
+        "Fruits": "🍌🍏🍍🍉🥭🍊🍓🍒🍇🫐🥝🍈",
+        "Cars": "🚘🚒🚛🚜🚑🚙🚚🚌🚐🏍🚎🚓"
+    ]
     private var dictEmoji = [Card: String]()
 
     private func emoji(for card: Card) -> String {
@@ -102,7 +124,7 @@ class ViewController: UIViewController {
                 emoji.startIndex,
                 offsetBy: emoji.count.acr4random
             )
-            dictEmoji[card] = String(emoji.remove(at: randomStringIndex)) 
+            dictEmoji[card] = String(emoji.remove(at: randomStringIndex))
         }
         
         return dictEmoji[card] ?? "?"

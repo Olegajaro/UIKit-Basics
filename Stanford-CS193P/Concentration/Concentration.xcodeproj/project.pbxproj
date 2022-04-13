@@ -64,9 +64,9 @@
 			children = (
 				1063721928001D2500ADFF42 /* Main.storyboard */,
 				1059285F2800737E00A6EB11 /* Card.swift */,
-				10D95CEC28070CEB006CF45E /* Extensions.swift */,
 				1063721728001D2500ADFF42 /* ViewController.swift */,
 				1059285D2800736E00A6EB11 /* Concentration.swift */,
+				10D95CEC28070CEB006CF45E /* Extensions.swift */,
 				1063722728001D6900ADFF42 /* Files */,
 				1063722128001D2600ADFF42 /* Info.plist */,
 			);
