@@ -10,6 +10,8 @@ import Foundation
 struct Concentration {
     private(set) var cards = [Card]()
     
+    var flipCount: Int = 0
+    
     private var indexOfOneAndOnlyFaceUpCard: Int? {
         get {
             return cards.indices.filter { cards[$0].isFaceUp }.oneAndOnly
@@ -55,6 +57,14 @@ struct Concentration {
         }
     }
     
+    mutating func resetGame() {
+        for index in cards.indices {
+            cards[index].isFaceUp = false
+            cards[index].isMatched = false
+            cards.shuffle()
+        }
+    }
+    
     init(numberOfPairsOfCards: Int) {
         assert(
             numberOfPairsOfCards > 0,
@@ -66,11 +76,5 @@ struct Concentration {
         }
         // Shuffle the cards
         cards.shuffle()
-    }
-}
-
-extension Collection {
-    var oneAndOnly: Element? {
-        return count == 1 ? first : nil
     }
 }

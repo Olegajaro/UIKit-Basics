@@ -11,7 +11,6 @@ class ViewController: UIViewController {
 
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
     
-    
     @IBOutlet private weak var flipCountLabel: UILabel! {
         didSet {
             updateFlipCountLabel()
@@ -36,12 +35,21 @@ class ViewController: UIViewController {
 
     @IBAction private func touchCard(_ sender: UIButton) {
         flipCount += 1
-        if let cardNumber = cardButtons.firstIndex(of: sender) {
-            game.chooseCard(at: cardNumber)
-            updateViewFromModel()
+//        game.flipCount += 1
+        if let buttonIndex = cardButtons.firstIndex(of: sender) {
+            game.chooseCard(at: buttonIndex)
+            updateViewFromModel() 
         } else {
             print("Choosen card was not in cardButtons")
         }
+    }
+    
+    @IBAction func startNewGame() {
+        print("DEBUG: start New Game")
+        
+        game.resetGame()
+        updateViewFromModel()
+        flipCount = 0
     }
     
     private func updateViewFromModel() {
@@ -66,7 +74,7 @@ class ViewController: UIViewController {
                     for: .normal
                 )
                 button.backgroundColor = card.isMatched
-                ? .systemOrange.withAlphaComponent(0)
+                ? .clear
                 : .systemOrange
             }
         }
@@ -78,14 +86,14 @@ class ViewController: UIViewController {
             .strokeColor: UIColor.systemYellow
         ]
         let attrText = NSAttributedString(
-            string: "Flip Count: \(flipCount)",
+            string: "Flips \(flipCount)",
             attributes: attr
         )
         flipCountLabel.attributedText = attrText
     }
     
 //    private var emoji = ["👻", "🎃", "😈", "🐉", "🐢", "😱", "🐰", "🍭", "🍎"]
-    private var emoji = "👻🎃😈🐉🐢😱🐰🍭🍎"
+    private var emoji = "👻🎃😈🐉🐢😱🐰🍭🍎♠️♣️♥️📝🐶🗑"
     private var dictEmoji = [Card: String]()
 
     private func emoji(for card: Card) -> String {
@@ -98,17 +106,5 @@ class ViewController: UIViewController {
         }
         
         return dictEmoji[card] ?? "?"
-    }
-}
-
-extension Int {
-    var acr4random: Int {
-        if self > 0 {
-            return Int(arc4random_uniform(UInt32(self)))
-        } else if self < 0 {
-            return -Int(arc4random_uniform(UInt32(abs(self))))
-        } else {
-            return 0
-        }
     }
 }
