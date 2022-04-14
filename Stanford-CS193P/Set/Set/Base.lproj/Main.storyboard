@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Set" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="X1H-fO-9nS">
+                                <rect key="frame" x="20" y="44" width="378" height="733"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7mw-xu-RDf">
+                                        <rect key="frame" x="0.0" y="0.0" width="378" height="115.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YXa-nm-O0U" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kkr-a7-rld" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="96.5" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="0MS-Cl-maH" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="193" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="VIx-Ds-CXL" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="289.5" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2fA-f8-L4S">
+                                        <rect key="frame" x="0.0" y="123.5" width="378" height="115.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="KhF-zp-hFZ" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="42l-jf-zbc" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="96.5" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Mzk-tn-5k5" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="193" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2ts-zP-yGy" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="289.5" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zkc-tu-N8X">
+                                        <rect key="frame" x="0.0" y="247" width="378" height="115.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="YmX-PG-WKI" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="R4W-e6-xMC" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="96.5" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="vw9-73-ist" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="193" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1JZ-Q7-zv1" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="289.5" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CJR-bZ-JPo">
+                                        <rect key="frame" x="0.0" y="370.5" width="378" height="115.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ea5-IH-QS9" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ADt-Hk-QcA" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="96.5" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="6Xq-Ub-ute" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="193" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pxg-rV-JIZ" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="289.5" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Dzj-Th-yof">
+                                        <rect key="frame" x="0.0" y="494" width="378" height="115.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zjF-1S-D8v" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ZqS-re-nms" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="96.5" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="NUx-Wk-Q5e" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="193" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wpw-Hx-0Xy" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="289.5" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JiE-y5-hk0">
+                                        <rect key="frame" x="0.0" y="617.5" width="378" height="115.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="BDt-Zx-mf6" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="gke-1y-N52" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="96.5" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lrf-Px-Q3a" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="193" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bK8-34-nMW" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="289.5" y="0.0" width="88.5" height="115.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <string key="title">⬥
+●
+■</string>
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="26"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ud7-zM-Ib6">
+                                <rect key="frame" x="20" y="785" width="378" height="77"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WPp-nO-rea">
+                                        <rect key="frame" x="0.0" y="0.0" width="378" height="34.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSn-b2-r0J" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="84.5" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Hint">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                                    <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAR-YW-9Jl" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="92.5" y="0.0" width="160.5" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="New game">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                                    <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qB-1l-Xts" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="261" y="0.0" width="117" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Deal 3 +">
+                                                    <fontDescription key="titleFontDescription" type="system" pointSize="17"/>
+                                                    <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="daI-rN-8kG">
+                                        <rect key="frame" x="0.0" y="42.5" width="378" height="34.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deck: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GqX-bB-LwN">
+                                                <rect key="frame" x="0.0" y="0.0" width="58.5" height="34.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="WIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhE-mb-PU2">
+                                                <rect key="frame" x="170.5" y="0.0" width="32.5" height="34.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSq-ba-cRV">
+                                                <rect key="frame" x="314.5" y="0.0" width="63.5" height="34.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <constraints>
+                            <constraint firstItem="X1H-fO-9nS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5K4-P7-dvE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X1H-fO-9nS" secondAttribute="trailing" constant="16" id="DzU-9t-dwN"/>
+                            <constraint firstItem="ud7-zM-Ib6" firstAttribute="top" secondItem="X1H-fO-9nS" secondAttribute="bottom" constant="8" symbolic="YES" id="KTh-cq-o3B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ud7-zM-Ib6" secondAttribute="bottom" id="OyC-sb-0XF"/>
+                            <constraint firstItem="ud7-zM-Ib6" firstAttribute="trailing" secondItem="X1H-fO-9nS" secondAttribute="trailing" id="aYU-YA-60x"/>
+                            <constraint firstItem="X1H-fO-9nS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ntb-be-OV5"/>
+                            <constraint firstItem="ud7-zM-Ib6" firstAttribute="leading" secondItem="X1H-fO-9nS" secondAttribute="leading" id="p35-sE-kyD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="cardButtons" destination="YXa-nm-O0U" collectionClass="NSMutableArray" id="hR7-FB-JV2"/>
+                        <outletCollection property="cardButtons" destination="kkr-a7-rld" collectionClass="NSMutableArray" id="g4i-cw-gPb"/>
+                        <outletCollection property="cardButtons" destination="0MS-Cl-maH" collectionClass="NSMutableArray" id="2Nk-55-dTn"/>
+                        <outletCollection property="cardButtons" destination="VIx-Ds-CXL" collectionClass="NSMutableArray" id="Ykp-Up-uJe"/>
+                        <outletCollection property="cardButtons" destination="KhF-zp-hFZ" collectionClass="NSMutableArray" id="Dh7-IR-Zof"/>
+                        <outletCollection property="cardButtons" destination="42l-jf-zbc" collectionClass="NSMutableArray" id="sCe-zk-ver"/>
+                        <outletCollection property="cardButtons" destination="Mzk-tn-5k5" collectionClass="NSMutableArray" id="SCG-R2-jX9"/>
+                        <outletCollection property="cardButtons" destination="2ts-zP-yGy" collectionClass="NSMutableArray" id="h5f-nZ-4oI"/>
+                        <outletCollection property="cardButtons" destination="YmX-PG-WKI" collectionClass="NSMutableArray" id="tbS-PQ-as6"/>
+                        <outletCollection property="cardButtons" destination="R4W-e6-xMC" collectionClass="NSMutableArray" id="Yh7-iS-w5i"/>
+                        <outletCollection property="cardButtons" destination="vw9-73-ist" collectionClass="NSMutableArray" id="lQM-J9-MYa"/>
+                        <outletCollection property="cardButtons" destination="1JZ-Q7-zv1" collectionClass="NSMutableArray" id="q0n-Hg-r2U"/>
+                        <outletCollection property="cardButtons" destination="ea5-IH-QS9" collectionClass="NSMutableArray" id="ul0-X7-Pyw"/>
+                        <outletCollection property="cardButtons" destination="ADt-Hk-QcA" collectionClass="NSMutableArray" id="4OE-NH-wAZ"/>
+                        <outletCollection property="cardButtons" destination="6Xq-Ub-ute" collectionClass="NSMutableArray" id="V6C-1W-jMY"/>
+                        <outletCollection property="cardButtons" destination="pxg-rV-JIZ" collectionClass="NSMutableArray" id="NZh-wP-vY0"/>
+                        <outletCollection property="cardButtons" destination="zjF-1S-D8v" collectionClass="NSMutableArray" id="IZA-db-eah"/>
+                        <outletCollection property="cardButtons" destination="ZqS-re-nms" collectionClass="NSMutableArray" id="cWa-Yb-6Em"/>
+                        <outletCollection property="cardButtons" destination="NUx-Wk-Q5e" collectionClass="NSMutableArray" id="8AY-qW-8mI"/>
+                        <outletCollection property="cardButtons" destination="wpw-Hx-0Xy" collectionClass="NSMutableArray" id="K8a-yh-lrF"/>
+                        <outletCollection property="cardButtons" destination="BDt-Zx-mf6" collectionClass="NSMutableArray" id="qdW-Gd-kDj"/>
+                        <outletCollection property="cardButtons" destination="gke-1y-N52" collectionClass="NSMutableArray" id="b2A-de-a5I"/>
+                        <outletCollection property="cardButtons" destination="lrf-Px-Q3a" collectionClass="NSMutableArray" id="4yt-dP-bpa"/>
+                        <outletCollection property="cardButtons" destination="bK8-34-nMW" collectionClass="NSMutableArray" id="Okt-3Z-LpM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33" y="150"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="0MS-Cl-maH">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="1JZ-Q7-zv1">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="2ts-zP-yGy">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="42l-jf-zbc">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="5qB-1l-Xts">
+            <size key="intrinsicContentSize" width="87.5" height="34.5"/>
+        </designable>
+        <designable name="6Xq-Ub-ute">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="ADt-Hk-QcA">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="BDt-Zx-mf6">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="GAR-YW-9Jl">
+            <size key="intrinsicContentSize" width="105.5" height="34.5"/>
+        </designable>
+        <designable name="KSn-b2-r0J">
+            <size key="intrinsicContentSize" width="55.5" height="34.5"/>
+        </designable>
+        <designable name="KhF-zp-hFZ">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="Mzk-tn-5k5">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="NUx-Wk-Q5e">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="R4W-e6-xMC">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="VIx-Ds-CXL">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="YXa-nm-O0U">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="YmX-PG-WKI">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="ZqS-re-nms">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="bK8-34-nMW">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="ea5-IH-QS9">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="gke-1y-N52">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="kkr-a7-rld">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="lrf-Px-Q3a">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="pxg-rV-JIZ">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="vw9-73-ist">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="wpw-Hx-0Xy">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+        <designable name="zjF-1S-D8v">
+            <size key="intrinsicContentSize" width="48.5" height="107.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
