@@ -14,6 +14,9 @@
 		10DC51D128083FEE00D4E52D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10DC51D028083FEE00D4E52D /* Assets.xcassets */; };
 		10DC51D428083FEE00D4E52D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DC51D228083FEE00D4E52D /* LaunchScreen.storyboard */; };
 		10DC51DD280843AE00D4E52D /* BorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DC51DC280843AE00D4E52D /* BorderButton.swift */; };
+		10DC51DF28084EE900D4E52D /* SetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DC51DE28084EE800D4E52D /* SetCard.swift */; };
+		10DC51E12808521100D4E52D /* SetCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DC51E02808521100D4E52D /* SetCardDeck.swift */; };
+		10DC51E3280853BF00D4E52D /* SetGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DC51E2280853BF00D4E52D /* SetGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		10DC51D328083FEE00D4E52D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10DC51D528083FEE00D4E52D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10DC51DC280843AE00D4E52D /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
+		10DC51DE28084EE800D4E52D /* SetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCard.swift; sourceTree = "<group>"; };
+		10DC51E02808521100D4E52D /* SetCardDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardDeck.swift; sourceTree = "<group>"; };
+		10DC51E2280853BF00D4E52D /* SetGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,9 @@
 			isa = PBXGroup;
 			children = (
 				10DC51CD28083FED00D4E52D /* Main.storyboard */,
+				10DC51DE28084EE800D4E52D /* SetCard.swift */,
+				10DC51E02808521100D4E52D /* SetCardDeck.swift */,
+				10DC51E2280853BF00D4E52D /* SetGame.swift */,
 				10DC51CB28083FED00D4E52D /* ViewController.swift */,
 				10DC51DC280843AE00D4E52D /* BorderButton.swift */,
 				10DC51DB2808401100D4E52D /* Files */,
@@ -149,10 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10DC51DF28084EE900D4E52D /* SetCard.swift in Sources */,
 				10DC51CC28083FED00D4E52D /* ViewController.swift in Sources */,
 				10DC51C828083FED00D4E52D /* AppDelegate.swift in Sources */,
 				10DC51CA28083FED00D4E52D /* SceneDelegate.swift in Sources */,
 				10DC51DD280843AE00D4E52D /* BorderButton.swift in Sources */,
+				10DC51E12808521100D4E52D /* SetCardDeck.swift in Sources */,
+				10DC51E3280853BF00D4E52D /* SetGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
