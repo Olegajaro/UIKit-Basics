@@ -11,6 +11,7 @@ class ViewController: UIViewController {
 
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
     
+    // MARK: - IBOutlets
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var flipCountLabel: UILabel!
     @IBOutlet private weak var scoreLabel: UILabel!
@@ -19,10 +20,12 @@ class ViewController: UIViewController {
     
     @IBOutlet private var cardButtons: [UIButton]!
     
+    // MARK: - Computеd properties #1
     var numberOfPairsOfCards: Int {
         return (cardButtons.count + 1) / 2
     }
     
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,6 +35,7 @@ class ViewController: UIViewController {
         update(label: flipCountLabel, withText: "Flips \(game.flipCount)")
     }
 
+    // MARK: - IBActions
     @IBAction private func touchCard(_ sender: UIButton) {
         if let buttonIndex = cardButtons.firstIndex(of: sender) {
             game.chooseCard(at: buttonIndex)
@@ -47,6 +51,7 @@ class ViewController: UIViewController {
         updateViewFromModel()
     }
     
+    // MARK: - Update UI Methods
     private func updateViewFromModel() {
         for index in cardButtons.indices {
             let button = cardButtons[index]
@@ -90,7 +95,17 @@ class ViewController: UIViewController {
         label.attributedText = attrText
     }
     
-//    private var emoji = ["👻", "🎃", "😈", "🐉", "🐢", "😱", "🐰", "🍭", "🍎"]
+    private func updateAppearance() {
+        view.backgroundColor = backgroundColor
+        flipCountLabel.textColor = cardBackgroundColor
+        scoreLabel.textColor = cardBackgroundColor
+        titleLabel.textColor = cardBackgroundColor
+        newGameButton.setTitleColor(backgroundColor, for: .normal)
+        newGameButton.backgroundColor = cardBackgroundColor
+    }
+    
+    // MARK: - Data to display
+    //    private var emoji = ["👻", "🎃", "😈", "🐉", "🐢", "😱", "🐰", "🍭", "🍎"]
     typealias Theme = (emoji: String,
                        backgroundColor: UIColor,
                        cardBackgroundColor: UIColor)
@@ -133,14 +148,5 @@ class ViewController: UIViewController {
         }
         
         return dictEmoji[card] ?? "?"
-    }
-    
-    private func updateAppearance() {
-        view.backgroundColor = backgroundColor
-        flipCountLabel.textColor = cardBackgroundColor
-        scoreLabel.textColor = cardBackgroundColor
-        titleLabel.textColor = cardBackgroundColor
-        newGameButton.setTitleColor(backgroundColor, for: .normal)
-        newGameButton.backgroundColor = cardBackgroundColor
     }
 }

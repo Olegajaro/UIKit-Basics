@@ -36,3 +36,9 @@ extension Array {
         }
     }
 }
+
+extension Date {
+    var sinceNow: Int {
+        return -Int(self.timeIntervalSinceNow)
+    }
+}

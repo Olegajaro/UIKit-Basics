@@ -10,8 +10,9 @@ import Foundation
 struct Concentration {
     
     private struct Points {
-        static let mathBonus = 2
-        static let missMatchPenalty = 1
+        static let mathBonus = 20
+        static let missMatchPenalty = 10
+        static var maxTimePenalty = 10
     }
     
     private(set) var cards = [Card]()
@@ -19,6 +20,11 @@ struct Concentration {
     private(set) var flipCount = 0
     private(set) var score = 0
     private var seenCards: Set<Int> = []
+    
+    private var dateClick: Date?
+    private var timePenalty: Int {
+        return min(dateClick?.sinceNow ?? 0, Points.maxTimePenalty)
+    }
     
     private var indexOfOneAndOnlyFaceUpCard: Int? {
         get {
@@ -52,6 +58,7 @@ struct Concentration {
         )
         if !cards[index].isMatched {
             flipCount += 1
+            dateClick = Date()
             
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
                 // check if cards match
@@ -73,6 +80,7 @@ struct Concentration {
                     seenCards.insert(index)
                     seenCards.insert(matchIndex)
                 }
+                score -= timePenalty
                 cards[index].isFaceUp = true
             } else {
                 // either no cards or 2 cards are face up
