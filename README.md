@@ -8,10 +8,10 @@ ____
 
 ## __Table View__
 
-+ [Pagination](/Pagination/README.md)
-+ [DiffableDataSource](/DiffableDataSource/README.md)
++ [Pagination](/TableView/Pagination/README.md)
++ [DiffableDataSource](/TableView/DiffableDataSource/README.md)
 
 ## __Collection View__
 
-+ [CompositionalLayout](/CompositionalLayout/README.md)
-+ [UICollectionViewFlowLayout](/UICollectionViewFlowLayout/README.md)
++ [CompositionalLayout](/CollectionView/CompositionalLayout/README.md)
++ [UICollectionViewFlowLayout](/CollectionView/UICollectionViewFlowLayout/README.md)
