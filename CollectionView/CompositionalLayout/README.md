@@ -42,22 +42,22 @@ ____
 
 ## List View
 
-![list](/CompositionalLayout/Images/List.png)
+![list](/CollectionView/CompositionalLayout/Images/List.png)
 
 ____
 
 ## Grid View
 
-![grid](/CompositionalLayout/Images/Grid.png)
+![grid](/CollectionView/CompositionalLayout/Images/Grid.png)
 
 ____
 
 ## Two-Column Grid View
 
-![two-column](/CompositionalLayout/Images/Two-Column.png)
+![two-column](/CollectionView/CompositionalLayout/Images/Two-Column.png)
 
 ____
 
 ## Grid with Badges
 
-![gridBadges](/CompositionalLayout/Images/GridBadges.png)
+![gridBadges](/CollectionView/CompositionalLayout/Images/GridBadges.png)

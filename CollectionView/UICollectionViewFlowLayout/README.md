@@ -2,4 +2,4 @@
 
 ____
 
-![example](/UICollectionViewFlowLayout/Images/flowLayout.png)
+![example](/CollectionView/UICollectionViewFlowLayout/Images/flowLayout.png)
