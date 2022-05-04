@@ -10,6 +10,7 @@ ____
 
 + [Pagination](/TableView/Pagination/README.md)
 + [DiffableDataSource](/TableView/DiffableDataSource/README.md)
++ [TableViewIndex](/TableView/TableViewIndex/README.md)
 
 ## __Collection View__
 
