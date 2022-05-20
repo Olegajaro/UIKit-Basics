@@ -10,6 +10,7 @@ import UIKit
 
 class EditMode: UIViewController {
     
+    // MARK: - Section info
     enum Section: Int {
         case visited = 0
         case bucketList
@@ -38,8 +39,9 @@ class EditMode: UIViewController {
     
     let reuseID = "reuse-id"
     
+    // MARK: - DiffableDataSource
     class MoveableCellDataSource: UITableViewDiffableDataSource<SectionType, ItemType> {
-        
+    
         // MARK: header/footer titles
         override func tableView(_ tableView: UITableView,
                                 titleForHeaderInSection section: Int) -> String? {
@@ -86,9 +88,7 @@ class EditMode: UIViewController {
                 snapshot.deleteItems([sourceIdentifier])
                 
                 // figure out if before or after (and double check same section)
-                let isAfter = destinationIndex > sourceIndex &&
-                snapshot.sectionIdentifier(containingItem: sourceIdentifier) ==
-                snapshot.sectionIdentifier(containingItem: destinationIdentifier)
+                let isAfter = destinationIndex > sourceIndex && snapshot.sectionIdentifier(containingItem: sourceIdentifier) == snapshot.sectionIdentifier(containingItem: destinationIdentifier)
                 
                 // insert back either before or after
                 if isAfter {
@@ -133,6 +133,7 @@ class EditMode: UIViewController {
     var dataSource: MoveableCellDataSource!
     var tableView: UITableView!
     
+    // MARK: - View Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -142,11 +143,13 @@ class EditMode: UIViewController {
     }
 }
 
+// MARK: - Configure Methods
 extension EditMode {
     private func configureTableView() {
         tableView = UITableView(frame: .zero, style: .insetGrouped)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: reuseID)
+        tableView.delegate = self
         
         view.addSubview(tableView)
         
@@ -159,12 +162,13 @@ extension EditMode {
     }
     
     private func configureDataSource() {
-        let formatter = NumberFormatter()
-        formatter.groupingSize = 3
-        formatter.usesGroupingSeparator = true
-        
-        dataSource = MoveableCellDataSource(tableView: tableView) { tableView, indexPath, place in
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: self.reuseID) else {
+        dataSource = MoveableCellDataSource(
+            tableView: tableView
+        ) { tableView, indexPath, place in
+            
+            guard
+                let cell = tableView.dequeueReusableCell(withIdentifier: self.reuseID)
+            else {
                 return UITableViewCell(style: .subtitle, reuseIdentifier: self.reuseID)
             }
             
@@ -208,5 +212,13 @@ extension EditMode {
     private func toggleEditing() {
         tableView.setEditing(!tableView.isEditing, animated: true)
         configureNavigationItem()
+    }
+}
+
+// MARK: - UITableViewDelegate
+extension EditMode: UITableViewDelegate {
+    func tableView(_ tableView: UITableView,
+                   didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
